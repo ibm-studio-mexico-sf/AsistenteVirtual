@@ -37,15 +37,8 @@ const userAV2 = process.env.ASSISTANT_USER;
 const pwdAV2 = process.env.ASSISTANT_PASSWORD;
 const defaultIdAV2 = process.env.DEFAULT_ASSISTANT_ID
 const debuggerLevel = process.env.LOGLEVEL
-const versionVR3= process.env.VR_V3_VERSION;
-const apiKeyVR3= process.env.VR_V3_API_KEY;
 
 
-
-const visualRecognition = new VisualRecognitionV3({
-	version: versionVR3,
-	iam_apikey: apiKeyVR3
-});
 
 //const assistant = new AssistantV1({ version: '2018-09-20' });
 const assistant = new AssistantV2(
