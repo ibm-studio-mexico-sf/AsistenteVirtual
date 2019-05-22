@@ -10,6 +10,7 @@ Basic Web project with ExpressJS on NodeJS
 * [Configuration](#configuration)
 * [Run](#run)
 * [Debug](#debug)
+* [Guide NPM](#guide)
 
 
 
@@ -84,3 +85,6 @@ bx dev build --debug
 bx dev debug
 ```
 
+### Guide
+#### Usin only NPM
+[How to buiild an AV ](/data/Actividad opcional post taller_Construye un asistente inteligente con IBM Watson v2.docx) 
