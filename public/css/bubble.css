@@ -1,0 +1,40 @@
+:root {
+  --flat-blue-10: rgba(61, 112, 178, 0.1);
+  --dark-blue-grey: #152934;
+  --soft-blue: #5aaafa;
+  --dodger-blue: #38abff;
+  --flat-blue: #3d70b2;
+	--wite: #FFFFFF;
+	--error-text:#AB74E1;
+	--error-border: #AB74E1;
+}
+.buble-watson {
+	/* padding: 2px; */
+	margin: 5px 5px 5px 0;
+	text-align: left;
+}
+.error div.simple-text{
+    color: var(--error-text);
+		border-color: var(--error-border);
+}
+.buble-watson .simple-text {
+ border-color: var(--flat-blue);
+ color: var(--flat-blue);
+}
+
+.simple-text {
+	border: solid 0.6px;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.buble-user {
+	text-align: right;
+	margin: 5px 0 5px 5px;
+	border-radius: 8px;
+	background-color: var(--wite);
+  border: solid 1.5px var(--soft-blue);
+}
+.buble-user .simple-text {
+	color: var(--soft-blue);
+}

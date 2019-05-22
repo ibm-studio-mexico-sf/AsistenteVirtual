@@ -1,0 +1,15 @@
+{"intents":[],"entities":[{"entity":"CDPlaticas","location":[0,8],"value":"general
+","confidence":1}],"input":{"text":"platicas"},"output":{"text":["Tenemos 14 pláticas diferentes 😃 divi
+didas en 2 temas principales","¿Cuál te interesa? 🤔"],"nodes_visited":["node_37_1539046317186","node_21
+_1539051719098"],"log_messages":[]},"context":{"conversation_id":"e07c519d-e10c-45e7-9f96-9c25f3243e42",
+"system":{"dialog_stack":[{"dialog_node":"node_21_1539051719098"}],"dialog_turn_counter":2,"dialog_reque
+st_counter":2,"_node_output_map":{"Welcome":[0,0],"node_1_1531504732463":{"0":[0],"1":[0],"2":[0]},"node
+_21_1539051719098":{"0":[0],"2":[0]}}},"HAV1":"13:30","HAV2":"17:05","HICP1":"12:15","HICP2":"16:20","PI
+BMQ":"17:05","PApert":"10:00","PDeepL":"12:15","PDocker":"11:30","PPrepIA":"11:30","PAcelera":"12:15","P
+ApiMone":"16:20","PBlueHub":"17:50","PWStudio":"15:35","timezone":"America/Mexico_City","HApiMone1":"11:
+30","HApiMone2":"15:35","HWStudio1":"16:20","HWStudio2":"17:50","PDigRobot":"15:35","PIBMCloud":"13:30",
+"PWatsonAI":"16:20","HCicloApp1":"13:30","HCicloApp2":"15:35","HDigRobot1":"11:30","HDigRobot2":"17:05",
+"PBlockChain":"17:05","HBlockChain1":"12:15","HBlockChain2":"17:50","PDataScience":"13:30","Tiempo":"18:
+52:23","output_context":{"options":[{"label":"Data Science","value":{"input":{"text":"EligeDataScience"}
+}},{"label":"Cloud for Innovation","value":{"input":{"text":"EligeCloudforInnovation"}}}],"response_type
+":"option"}}}

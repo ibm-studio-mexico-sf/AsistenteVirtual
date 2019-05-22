@@ -1,0 +1,59 @@
+:root {
+  --flat-blue-10: rgba(61, 112, 178, 0.1);
+  --dark-blue-grey: #152934;
+  --soft-blue: #5aaafa;
+  --dodger-blue: #38abff;
+  --flat-blue: #3d70b2;
+	--white: #FFFFFF;
+	--error-text:var(dark-blue-grey);
+	--error-border: var(dark-blue-grey);
+}
+#chat-footer > *{
+	font-family: IBMPlexSans;
+}
+#chat-footer {
+	background-color: var(--flat-blue-10);
+	max-height: 90px;
+	padding: 10px;
+	height: 90px;
+	box-sizing: border-box;
+}
+#chat-footer form > #inputMessage {
+	background: #fff;
+	border: none;
+	height: 2.5em;
+	border-radius: 5px;
+	color: var(dark-blue-grey);
+}
+#chat-footer form > #inputMessage::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: var(dark-blue-grey);
+}
+#chat-footer form > #inputMessage::-moz-placeholder { /* Firefox 19+ */
+  color: var(dark-blue-grey);
+}
+#chat-footer form > #inputMessage:-ms-input-placeholder { /* IE 10+ */
+  color: var(dark-blue-grey);
+}
+#chat-footer form > #inputMessage:-moz-placeholder { /* Firefox 18- */
+  color: var(dark-blue-grey);
+}
+#chat-footer form > #buttonMessage {
+	background: var(--flat-blue);
+	border: .5px solid var(--flat-blue);
+	height: 2.5em;
+	border-radius: 5px;
+	color: var(--white);
+}
+#chat-footer form > #buttonMessage:hover{
+	background: var(--soft-blue);
+	border: .5px solid var(--soft-blue);
+	color: var(--white);
+}
+#chat-footer form >button#buttom-camera{
+	background: url('/img/photo-camera.svg') no-repeat;
+	background-size: 30px 30px;
+	width: 30px;
+	height: 30px;
+	border: none;
+	margin-left: -30px;
+}

@@ -1,0 +1,12 @@
+#chat-conversation {
+	max-height: calc(100vh - 150px);
+	overflow-y: auto;
+	overflow-x: hidden;
+	min-height: calc(100vh - 150px);
+}
+#chat-conversation > *{
+	font-family: IBMPlexSans;
+}
+div img.vr-image{
+	height: 200px;
+}

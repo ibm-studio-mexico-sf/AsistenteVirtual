@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'IBMPlexSans-Bold';
+  src:  url('../fonts/IBMPlexSans/IBMPlexSans-Bold.ttf') format('truetype')
+}
+@font-face {
+  font-family: 'IBMPlexSans';
+  src:  url('../fonts/IBMPlexSans/IBMPlexSans-Regular.ttf') format('truetype')
+}

@@ -1,0 +1,80 @@
+{
+  "context": {
+    "conversation_id": "7b3f7f0b-d7d8-4c36-90ec-637c041cb802",
+    "system": {
+      "dialog_stack": [{
+        "dialog_node": "node_21_1539051719098"
+      }],
+      "dialog_turn_counter": 2,
+      "dialog_request_counter": 2,
+      "_node_output_map": {
+        "Welcome": [0, 0],
+        "node_1_1531504732463": {
+          "0": [0],
+          "1": [0],
+          "2": [0]
+        },
+        "node_21_1539051719098": {
+          "0": [0],
+          "2": [0]
+        }
+      }
+    },
+    "HAV1": "13:30",
+    "HAV2": "17:05",
+    "HICP1": "12:15",
+    "HICP2": "16:20",
+    "PIBMQ": "17:05",
+    "PApert": "10:00",
+    "PDeepL": "12:15",
+    "PDocker": "11:30",
+    "PPrepIA": "11:30",
+    "PAcelera": "12:15",
+    "PApiMone": "16:20",
+    "PBlueHub": "17:50",
+    "PWStudio": "15:35",
+    "timezone": "America/Mexico_City",
+    "HApiMone1": "11:30",
+    "HApiMone2": "15:35",
+    "HWStudio1": "16:20",
+    "HWStudio2": "17:50",
+    "PDigRobot": "15:35",
+    "PIBMCloud": "13:30",
+    "PWatsonAI": "16:20",
+    "HCicloApp1": "13:30",
+    "HCicloApp2": "15:35",
+    "HDigRobot1": "11:30",
+    "HDigRobot2": "17:05",
+    "PBlockChain": "17:05",
+    "HBlockChain1": "12:15",
+    "HBlockChain2": "17:50",
+    "PDataScience": "13:30",
+    "Tiempo": "18:20:57"
+  },
+  "input": {
+    "text": "platicas"
+  },
+  "output": {
+    "text": ["Tenemos 14 pláticas diferentes 😃 divididas en 2 temas principales", "¿Cuál te interesa? 🤔"],
+    "nodes_visited": ["node_37_1539046317186", "node_21_1539051719098"],
+    "log_messages": []
+  },
+  "output_context": {
+    "options": [{
+      "label": "Data Science",
+      "value": {
+        "input": {
+          "text": "EligeDataScience"
+        }
+      }
+    }, {
+      "label": "Cloud for Innovation",
+      "value": {
+        "input": {
+          "text": "EligeCloudforInnovation"
+        }
+      }
+    }],
+    "response_type": "option"
+  }
+}
