@@ -87,4 +87,4 @@ bx dev debug
 
 ### Guide
 #### Usin only NPM
-[How to buiild an AV ](/data/Actividad opcional post taller_Construye un asistente inteligente con IBM Watson v2.docx) 
+[How to buiild an AV refrence guide](https://github.com/ibm-studio-mexico-sf/AsistenteVirtual/blob/master/data/Actividad%20opcional%20post%20taller_Construye%20un%20asistente%20inteligente%20con%20IBM%20Watson%20v2.docx) 
