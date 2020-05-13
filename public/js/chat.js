@@ -20,6 +20,7 @@
     return singletextNode.append(text);
   }
 
+/**Crea las burbujas del chat*/
   let createWatsonBubble = function(widget) {
     let watsonBubbleNode = $("<div>", {
       class: "bubble buble-watson"
@@ -40,6 +41,9 @@
     });
     return watsonBubbleNode.append(widget);
   }
+/**Terminan la creacion de burbujas de chat*/
+
+/**Selector de widgets para mostrar en el chat*/
 
   let parseWidget = function(generic_context,target){
 
@@ -67,7 +71,7 @@
     widget = mainWidget(pause,widget);
     return widget;
   }
-  /**Widgets*/
+/**Widgets actuales en el selector*/
   let mainWidget = function(delay,widget){
     let currentWidget;
     if(delay&&delay>0){
@@ -135,6 +139,7 @@
 
  /**Termnina Widgets*/
 
+/**Proces la respuesta de Watson Assitant e invoca a los widgets*/
   let processResponse = function(oResponse) {
     /**Si no existe un response*/
     if (!oResponse) {
@@ -177,6 +182,8 @@
 		// 	session.refresh();
 		// }
   };
+
+/**Crea un mensaje para enviar a watson assitant mediante el api en Node*/
   let createMessage = function(text,showText) {
     /**validamos que se invoque con un texto**/
     if (!text) {
@@ -203,6 +210,8 @@
     /**Invocando la appi*/
     w.jApi.sendMessage(payloadMessage, processResponse);
   };
+
+  /**Procesa una respuesta de Visual Recognition*/
 	let precessResponseVr = function(context){
 		console.log("precessResponseVr : ",context);
 		let edad = context.images[0].faces[0]['age'];
@@ -252,6 +261,7 @@
 		w.jApi.closeSesion(payloadMessage, cleancontext);
 	};
 
+  /**Expone los siguientes objetos a la ventana*/
   window.chat = {
     init: init,
     advance:createMessage,
@@ -259,6 +269,7 @@
 		vrav:visualRecognitionWidget,
 		keep:''
   };
+
   let disableForm = function() {
     $("#inputMessage").prop('disabled', true);
     $("#buttonMessage").prop('disabled', true);

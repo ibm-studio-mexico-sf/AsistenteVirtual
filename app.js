@@ -33,28 +33,26 @@ const uuidv4 = require('uuid/v4');
 /**Variables de asistente*/
 const versionAV2 = process.env.ASSISTANT_V2_REVISION;
 const apiAV2 = process.env.ASSISTANT_V2_URL;
-const userAV2 = process.env.ASSISTANT_USER;
-const pwdAV2 = process.env.ASSISTANT_PASSWORD;
+const apikey = process.env.ASSISTANT_APIKEY;
 const defaultIdAV2 = process.env.DEFAULT_ASSISTANT_ID
 const debuggerLevel = process.env.LOGLEVEL
+const apiUrl=process.env.ASSISTANT_V2_URL
 
 const AssistantV2 = require('ibm-watson/assistant/v2');
 const { IamAuthenticator } = require('ibm-watson/auth');
 
+/**Configuracion de la conexion al API del asistente*/
+
 const assistant = new AssistantV2({
-    version: '2020-04-01',
+    version:versionAV2,
     authenticator: new IamAuthenticator({
-        apikey: '06Zn0mkF1ZjfwI0fm886BpzDFCrlg2jLmeCBct1F-Bd7',
+        apikey: apikey,
     }),
-    url: 'https://gateway.watsonplatform.net/assistant/api',
+    url: apiUrl,
     disableSslVerification: true,
 });
 
 const userInstance = new User();
-
-
-//const assistant = new AssistantV1({ version: '2018-09-20' });
-
 
 const app = express();
 // Bootstrap application settings
@@ -72,6 +70,7 @@ app.get('/watson/admin', function(requ, res) {
 // setupError will be set to an error message if we cannot recover from service setup or init error.
 let setupError = '';
 
+/**call http://localhost:3000/api/session to test cyour connection*/
 app.get('/api/session', function(request, response) {
 
  assistant.createSession({
@@ -88,6 +87,7 @@ app.get('/api/session', function(request, response) {
     
 });
 
+/**run  http://{server}:{port}/api/session to delete sesion*/
 app.delete('/api/session', function(req, res) {
     let data = req.body;
     let assistant_id = "";
@@ -124,7 +124,7 @@ app.delete('/api/session', function(req, res) {
     });
 });
 
-// Endpoint to be called from the client side
+// Run from REST client in order to senda a message for Watson Assistant.
 app.post('/api/message', function(req, res) {
 
     let id = uuidv4();
