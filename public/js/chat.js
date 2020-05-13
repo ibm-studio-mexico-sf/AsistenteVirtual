@@ -58,6 +58,8 @@
           break;
       case "text":
            let texto = generic_context.text;
+           let matricula = idGen.getId();
+           texto = texto.replace("{consulta_folio}", matricula);
            widget = createWatsonBubble(createSingleTextNode(texto));
          break;
       default:
